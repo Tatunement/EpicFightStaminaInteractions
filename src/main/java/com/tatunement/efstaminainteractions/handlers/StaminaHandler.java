@@ -152,6 +152,6 @@ public class StaminaHandler {
     }
 
     private static boolean manageJumpingConditions(Player player) {
-        return EpicFightStaminaInteractionsConfig.enableJumpStamina.get() && (!player.isCreative() && !player.onClimbable() && !player.isSwimming() && !player.isInWater() && !player.isSleeping());
+        return EpicFightStaminaInteractionsConfig.enableJumpStamina.get() && (!player.isCreative() && !player.onClimbable() && !player.isSwimming() && !player.isInWater() && !player.isSleeping() && !player.isFallFlying());
     }
 }
